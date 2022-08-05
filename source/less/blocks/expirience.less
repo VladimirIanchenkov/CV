@@ -1,0 +1,106 @@
+.expirience__container {
+  width: 280px;
+  .align-center;
+  padding-bottom: 27px;
+}
+
+.expirience__title {
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.expirience__subtitle {
+  margin: 0;
+  margin-bottom: 22px;
+  .oswald-400;
+  color: @black;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.expirience__text {
+  margin: 0;
+  margin-bottom: 18px;
+  text-indent: 34px;
+}
+
+.expirience__list {
+  padding-left: 34px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.expirience__list:first-of-type {
+  margin-bottom: 22px;
+}
+
+.expirience__item {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.expirience__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.expirience__item::before {
+  .custom-marker;
+  top: 4px;
+}
+
+@media (min-width: @tablet-width) {
+  .expirience__container {
+    width: 708px;
+    padding-bottom: 76px;
+  }
+
+  .expirience__title {
+    margin-bottom: 28px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .expirience__subtitle {
+    margin-bottom: 22px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .expirience__text {
+    margin-bottom: 18px;
+    text-indent: 0;
+  }
+
+  .expirience__list:first-of-type {
+    margin-bottom: 28px;
+  }
+
+  .expirience__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .expirience__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 190px;
+    width: 1220px;
+    padding-bottom: 70px;
+  }
+
+  .expirience__title {
+    grid-column: 1 / -1;
+  }
+
+  .expirience__subtitle:first-of-type {
+    grid-column: 1 / -1;
+  }
+
+  .expirience__text {
+    text-indent: 34px;
+  }
+}

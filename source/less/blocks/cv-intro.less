@@ -1,0 +1,129 @@
+.cv-intro {
+  padding-top: 45px;
+  margin-bottom: 25px;
+  background-color: @first-additional-color;
+  background-image: url("../img/photo-cv.png");
+  background-size: 225px 280px;
+  background-repeat: no-repeat;
+  background-position: 75% 75%;
+}
+
+.cv-intro__container {
+  width: 280px;
+  min-height: 370px;
+  .align-center;
+}
+
+.cv-intro__name {
+  .oswald-400;
+  color: @white;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.cv-intro__speciality {
+  display: inline-block;
+  margin: 0;
+  .oswald-400;
+  color: @white;
+  font-size: 14px;
+  line-height: 23px;
+  text-transform: uppercase;
+  border-top: 1px solid @white;
+  border-bottom: 1px solid @white;
+}
+
+.cv-intro__button-container {
+  padding-top: 18px;
+  padding-bottom: 22px;
+  background-color: @second-additional-color;
+}
+
+.cv-intro__button-container-inner {
+  width: 280px;
+  .align-center;
+}
+
+.cv-intro__button {
+  display: block;
+  width: calc(100% - 10px);
+}
+
+@media (min-resolution: 2dppx) {
+  .cv-intro {
+    background-image: url("../img/photo-cv@2x.png");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .cv-intro {
+    padding-top: 40px;
+    background-size: 270px 336px;
+    background-position: 100% 100%;
+  }
+
+  .cv-intro__container {
+    position: relative;
+    width: 708px;
+    min-height: 317px;
+  }
+
+  .cv-intro__name {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+
+  .cv-intro__name br {
+    display: none;
+  }
+
+  .cv-intro__speciality {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .cv-intro__photo {
+    position: absolute;
+    right: 5%;
+    height: 284px;
+  }
+
+  .cv-intro__button-container {
+    padding-top: 0;
+    padding-bottom: 40px;
+    background: none;
+  }
+
+  .cv-intro__button-container-inner {
+    width: 708px;
+  }
+
+  .cv-intro__button {
+    width: 270px;
+    padding: 14px 10px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cv-intro {
+    padding-top: 82px;
+    margin: 0;
+    background-size: 450px 560px;
+  }
+
+  .cv-intro__container {
+    width: 1220px;
+    min-height: 220px;
+  }
+
+  .cv-intro__button-container-inner {
+    width: 1220px;
+    padding-bottom: 320px;
+  }
+}

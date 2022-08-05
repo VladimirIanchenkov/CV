@@ -1,0 +1,107 @@
+.about-me {
+  padding-bottom: 25px;
+}
+
+.about-me__container {
+  width: 212px;
+  padding: 17px 34px 34px;
+  .align-center;
+  background-color: @second-additional-color;
+}
+
+.about-me__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 46px;
+  .oswald-400;
+  color: @black;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: @second-additional-color;
+}
+
+.about-me__title::after {
+  content: "";
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  height: 10px;
+  width: 246px;
+  background-color: @accent-color;
+}
+
+.about-me__text {
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.about-me__text:last-of-type {
+  margin-bottom: 32px;
+}
+
+.about-me__download-link {
+  .oswald-400;
+  color: @black;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.about-me__download-link:hover {
+  text-decoration: underline;
+  opacity: 0.6;
+}
+
+.about-me__download-link:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .about-me {
+    padding-bottom: 40px;
+  }
+
+  .about-me__container {
+    width: 640px;
+  }
+
+
+  .about-me__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .about-me__title::after {
+    width: 674px;
+  }
+
+  .about-me__text,
+  .about-me__text:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  .about-me__download-link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-me {
+    margin-top: -327px;
+    padding-top: 44px;
+    padding-bottom: 54px;
+  }
+
+  .about-me__container {
+    width: 407px;
+    margin: 0;
+    margin-left: calc((100vw - 1220px) / 2);
+  }
+
+  .about-me__title::after {
+    width: 441px;
+  }
+}
