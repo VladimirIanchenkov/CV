@@ -4,20 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Резюме: Янченков Владимир</title>
+    <link rel="preload" href="./css/style.min.css" as="style">
+    <link rel="preload" href="./js/script.min.js" as="script">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./favicon.ico">
     <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./img/favicons/apple.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="./manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__container">
         <a class="main-header__link">
           <svg role="img" aria-label="Логотип Владимира Янченкова">
-            <use class="main-header__logo main-header__logo--desktop" href="../img/sprite.svg#logo-desktop"></use>
-            <use class="main-header__logo main-header__logo--tablet" href="../img/sprite.svg#logo-tablet"></use>
-            <use class="main-header__logo main-header__logo--mobile" href="../img/sprite.svg#logo-mobile"></use>
+            <use class="main-header__logo main-header__logo--desktop" href="./img/sprite.svg#logo-desktop"></use>
+            <use class="main-header__logo main-header__logo--tablet" href="./img/sprite.svg#logo-tablet"></use>
+            <use class="main-header__logo main-header__logo--mobile" href="./img/sprite.svg#logo-mobile"></use>
           </svg>
         </a>
       </div>
@@ -146,7 +150,10 @@
               <li class="portfolio__item">
                 <a class="portfolio__link" href="https://vladimirianchenkov.github.io/2003875-device-33/" target="_blank">
                   <picture>
-                    <source media="(min-width: 1220px)" srcset="img/image-device-desktop.jpg 1x, img/image-device-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/image-device-mobile.webp 1x, img/image-device-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/image-device-mobile.webp 1x, img/image-device-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/image-device-mobile.webp 1x, img/image-device-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/image-device-desktop.jpg 1x, img/image-device-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/image-device-tablet.jpg 1x, img/image-device-tablet@2x.jpg 2x">
                     <img class="portfolio__image" src="img/image-device-mobile.jpg" srcset="img/image-device-mobile@2x.jpg 2x" alt="Проект &quot;Девайс&quot;">
                   </picture>
@@ -155,7 +162,10 @@
               <li class="portfolio__item">
                 <a class="portfolio__link" href="https://vladimirianchenkov.github.io/2003875-cat-energy-25/" target="_blank">
                   <picture>
-                    <source media="(min-width: 1220px)" srcset="img/image-catenergy-desktop.jpg 1x, img/image-catenergy-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/image-catenergy-tablet.webp 1x, img/image-catenergy-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/image-catenergy-tablet.webp 1x, img/image-catenergy-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/image-catenergy-tablet.webp 1x, img/image-catenergy-tablet@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/image-catenergy-desktop.jpg 1x, img/image-catenergy-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/image-catenergy-tablet.jpg 1x, img/image-catenergy-tablet@2x.jpg 2x">
                     <img class="portfolio__image" src="img/image-catenergy-mobile.jpg" srcset="img/image-catenergy-mobile@2x.jpg 2x" alt="Проект &quot;Кэт Энерджи&quot;">
                   </picture>
@@ -164,7 +174,10 @@
               <li class="portfolio__item">
                 <a class="portfolio__link" href="https://vladimirianchenkov.github.io/2003875-keksobooking-26/" target="_blank">
                   <picture>
-                    <source media="(min-width: 1220px)" srcset="img/image-keksobooking-desktop.jpg 1x, img/image-keksobooking-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/image-keksobooking-tablet.webp 1x, img/image-keksobooking-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/image-keksobooking-tablet.webp 1x, img/image-keksobooking-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/image-keksobooking-tablet.webp 1x, img/image-keksobooking-tablet@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/image-keksobooking-desktop.jpg 1x, img/image-keksobooking-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/image-keksobooking-tablet.jpg 1x, img/image-keksobooking-tablet@2x.jpg 2x">
                     <img class="portfolio__image" src="img/image-keksobooking-mobile.jpg" srcset="img/image-keksobooking-mobile@2x.jpg 2x" alt="Проект &quot;Кексобукинг&quot;">
                   </picture>
@@ -267,6 +280,6 @@
       </section>
     </footer>
 
-    <script src="js/script.min.js"></script>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>
