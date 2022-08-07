@@ -104,15 +104,15 @@
   }
 
   .main-nav--closed .main-nav__toggle {
-    background-size: 50px 30px;
-    width: 50px;
-    height: 30px;
+    background-size: 44px 27px;
+    width: 44px;
+    height: 27px;
   }
 
   .main-nav--opened .main-nav__toggle {
-    background-size: 30px 30px;
-    width: 50px;
-    height: 30px;
+    background-size: 27px 27px;
+    width: 44px;
+    height: 27px;
   }
 }
 
@@ -126,10 +126,14 @@
   .main-nav--nojs .main-nav__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
     position: relative;
     padding: 0;
     margin: 0;
     width: max-content;
+    max-width: 1020px;
     list-style-type: none;
   }
 
@@ -140,6 +144,8 @@
   .main-nav__item,
   .main-nav__item:first-child {
     border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .main-nav__link {

@@ -30,7 +30,7 @@
       closed закрытое меню навигации, кнопка .main-nav__toggle имеет вид "гамбургера";
       opened открытое меню навигации, кнопка .main-nav__toggle имеет вид "крестика";
       nojs отображение меню навигации при отключенном Java Script, кнопка .main-nav__toggle скрыта.-->
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__toggle-container">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -85,9 +85,9 @@
         <ul class="skills__list">
           <li class="skills__item">Создание адаптивного дизайна на основе семантической разметки по методологии БЭМ.</li>
           <li class="skills__item">Использование препроцессоров и автоматизации сборки проектов.</li>
-          <li class="skills__item">Программирование интерфейсов согласно методологии ООП.</li>
           <li class="skills__item">Применение внешних API и сторонних библиотек.</li>
           <li class="skills__item">Асинхронное программирование и работа с сетью.</li>
+          <li class="skills__item">Верстка согласно макета с учетом концепции PixelPerfect.</li>
         </ul>
         <div class="skills__container">
           <h3 class="skills__subtitle">Применяемый стек технологий</h3>
@@ -128,14 +128,14 @@
             <p class="expirience__text">В рамках образовательного курса “Профессия: Фронтенд-разработчик” выполнено:</p>
             <ul class="expirience__list">
               <li class="expirience__item">практическое и теоретическое изучение основ фронтенд-разработки;</li>
-              <li class="expirience__item">семантическая и кросс-браузерная верстка по макету, анализ и работа с техничесим заданием;</li>
+              <li class="expirience__item">семантическая кросс-браузерная верстка по макету, анализ и работа с техничесим заданием;</li>
               <li class="expirience__item">написание валидного кода, рефакторинг кода согласно принципам DRY, KISS & YAGNI;</li>
               <li class="expirience__item">работа с документацией и инструментами разработчика: Git, VS Code, Figma, DevTools;</li>
               <li class="expirience__item">верстка и “оживление” интерактивных элементов страницы.</li>
             </ul>
           </div>
           <div class="expirience__container-inner">
-            <h3 class="expirience__subtitle">Результаты, достижения</h3>
+            <h3 class="expirience__subtitle expirience__subtitle--inner">Результаты, достижения</h3>
             <ul class="expirience__list results-list">
               <li class="results-list__item">Изучено более более <b>150</b> глав учебника и статей по теме образовательного курса.</li>
               <li class="results-list__item">Пройдено <b>60</b> частей тренажеров, всего более <b>1250</b> заданий.</li>
@@ -150,8 +150,8 @@
               <li class="portfolio__item">
                 <a class="portfolio__link" href="https://vladimirianchenkov.github.io/2003875-device-33/" target="_blank">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/image-device-mobile.webp 1x, img/image-device-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/image-device-mobile.webp 1x, img/image-device-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/image-device-desktop.webp 1x, img/image-device-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/image-device-tablet.webp 1x, img/image-device-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/image-device-mobile.webp 1x, img/image-device-mobile@2x.webp 2x">
                     <source media="(min-width: 1440px)" srcset="img/image-device-desktop.jpg 1x, img/image-device-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/image-device-tablet.jpg 1x, img/image-device-tablet@2x.jpg 2x">
@@ -159,24 +159,24 @@
                   </picture>
                 </a>
               </li>
-              <li class="portfolio__item">
+              <li class="portfolio__item  portfolio__item--hidden">
                 <a class="portfolio__link" href="https://vladimirianchenkov.github.io/2003875-cat-energy-25/" target="_blank">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/image-catenergy-tablet.webp 1x, img/image-catenergy-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/image-catenergy-desktop.webp 1x, img/image-catenergy-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/image-catenergy-tablet.webp 1x, img/image-catenergy-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/image-catenergy-tablet.webp 1x, img/image-catenergy-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/image-catenergy-mobile.webp 1x, img/image-catenergy-mobile@2x.webp 2x">
                     <source media="(min-width: 1440px)" srcset="img/image-catenergy-desktop.jpg 1x, img/image-catenergy-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/image-catenergy-tablet.jpg 1x, img/image-catenergy-tablet@2x.jpg 2x">
                     <img class="portfolio__image" src="img/image-catenergy-mobile.jpg" srcset="img/image-catenergy-mobile@2x.jpg 2x" alt="Проект &quot;Кэт Энерджи&quot;">
                   </picture>
                 </a>
               </li>
-              <li class="portfolio__item">
+              <li class="portfolio__item portfolio__item--hidden">
                 <a class="portfolio__link" href="https://vladimirianchenkov.github.io/2003875-keksobooking-26/" target="_blank">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/image-keksobooking-tablet.webp 1x, img/image-keksobooking-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/image-keksobooking-desktop.webp 1x, img/image-keksobooking-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/image-keksobooking-tablet.webp 1x, img/image-keksobooking-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/image-keksobooking-tablet.webp 1x, img/image-keksobooking-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/image-keksobooking-mobile.webp 1x, img/image-keksobooking-mobile@2x.webp 2x">
                     <source media="(min-width: 1440px)" srcset="img/image-keksobooking-desktop.jpg 1x, img/image-keksobooking-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/image-keksobooking-tablet.jpg 1x, img/image-keksobooking-tablet@2x.jpg 2x">
                     <img class="portfolio__image" src="img/image-keksobooking-mobile.jpg" srcset="img/image-keksobooking-mobile@2x.jpg 2x" alt="Проект &quot;Кексобукинг&quot;">
@@ -279,6 +279,10 @@
         </ul>
       </section>
     </footer>
+
+    <button class="up-button up-button--hidden button" type="button">
+      <span class="visually-hidden">Наверх</span>
+    </button>
 
     <script src="./js/script.min.js"></script>
   </body>
