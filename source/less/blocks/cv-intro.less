@@ -2,10 +2,16 @@
   padding-top: 45px;
   margin-bottom: 25px;
   background-color: @first-additional-color;
-  background-image: url("../img/photo-cv.png");
-  background-size: 225px 280px;
+  background-image: url("../img/photo-cv-mobile.png");
+  background-size: 280px 291px;
   background-repeat: no-repeat;
   background-position: calc((100vw - 280px) / 2 + 80px) 75%;
+
+  @media (min-resolution: 2dppx) {
+    .cv-intro {
+      background-image: url("../img/photo-cv-mobile@2x.png");
+    }
+  }
 }
 
 .cv-intro__container {
@@ -51,17 +57,18 @@
   width: calc(100% - 10px);
 }
 
-@media (min-resolution: 2dppx) {
-  .cv-intro {
-    background-image: url("../img/photo-cv@2x.png");
-  }
-}
-
 @media (min-width: @tablet-width) {
   .cv-intro {
     padding-top: 40px;
-    background-size: 270px 336px;
-    background-position: calc((100vw - 708px) / 2 + 470px)  100%;
+    background-image: url("../img/photo-cv-tablet.png");
+    background-size: 384px 349px;
+    background-position: calc((100vw - 708px) / 2 + 360px)  100%;
+
+    @media (min-resolution: 2dppx) {
+      .cv-intro {
+        background-image: url("../img/photo-cv-tablet@2x.png");
+      }
+    }
   }
 
   .cv-intro__container {
@@ -114,8 +121,15 @@
   .cv-intro {
     padding-top: 82px;
     margin: 0;
-    background-size: 450px 560px;
-    background-position: calc((100vw - 1220px) / 2 + 879px)  100%;
+    background-image: url("../img/photo-cv-desktop.png");
+    background-size: 538px 540px;
+    background-position: calc((100vw - 1220px) / 2 + 700px)  100%;
+
+    @media (min-resolution: 2dppx) {
+      .cv-intro {
+        background-image: url("../img/photo-cv-tablet@2x.png");
+      }
+    }
   }
 
   .cv-intro__container {
