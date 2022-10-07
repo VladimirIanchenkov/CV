@@ -49,7 +49,7 @@ const scripts = () => {
 // Images
 
 const optimizeImages = () => {
-  return gulp.src('source/img/*.{png,jpg}')
+  return gulp.src('source/img/**/*.{png,jpg}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'))
 }
@@ -97,14 +97,13 @@ const copy = (done) => {
   'source/fonts/*.{woff2,woff}',
   'source/*.ico',
   'source/*.webmanifest',
-  'source/doc/*.pdf'
+  'source/doc/*.pdf',
   ], {
   base: 'source'
   })
   .pipe(gulp.dest('build'))
   done();
 }
-
 
 // Clean
 
